@@ -29,7 +29,9 @@ label,
   margin: 2% 0;
   font-size: 0.7rem;
 }
-
+#exp-label{
+    margin-right: 5%;
+}
 input {
   width: 15rem;
   padding: 2%;
@@ -101,6 +103,15 @@ img {
 #logo{
     width: 45px;
     padding-bottom: 15%;
+}
+.card-back{
+    position: relative;
+}
+#cvv{
+    position: absolute;
+    right: 2%;
+    bottom: 45%;
+    color: white;
 }
 /* footer */
 .attribution {
