@@ -1,2 +1,2 @@
 # interactive-card-details
-A challenge from Frontendmentor.io
+A challenge from https://www.frontendmentor.io/
