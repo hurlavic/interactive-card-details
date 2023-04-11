@@ -37,32 +37,42 @@
       <form action="submit" class="card">
         <label for="card-name">CARD HOLDER NAME</label>
         <input type="text" placeholder="Enter your name" id="card-name">
-        <div id="error-name"></div>
+        <div id="error-name" class="error"></div>
         <label for="card-number">CARD NUMBER</label>
         <input type="text" name="card-number" id="card-number" placeholder="Enter card number">
+        <div id="error-num" class="error"></div>
         <div class="card-data-label">
           <label for="exp-date" id="exp-label">Exp. Date [MM/YY]</label>
           <label for="cvc">CVC</label>
         </div>
         <div class="card-data-input">
-          <input type="text" id="exp-date" placeholder="MM">
-          <input type="text" id="exp-date" placeholder="YY">
+          <input type="text" id="exp-date" placeholder="MM" class="month">
+          <input type="text" id="exp-date" placeholder="YY" class="year">
           <input type="text" id="cvc" placeholder="CVC">
         </div>
-        <button type="submit">Confirm</button>
+        <div id="error-date" class="error"></div>
+        <button type="submit" id="confirm">Confirm</button>
       </form>
     </section>
 
     <!-- Completed state start -->
+    <article class="success">
+      <h2>
+        Thank you!
+      </h2>
+      <p>
+        We've added your card details
+      </p>
+      <button type="reset">
+        Continue
+      </button>
 
-    <!-- Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    </article>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
     <script src="/assets/js/style.js"></script>
   </body>
 
