@@ -98,6 +98,10 @@ img {
 .date {
   font-size: small;
 }
+#logo{
+    width: 45px;
+    padding-bottom: 15%;
+}
 /* footer */
 .attribution {
   font-size: 11px;
