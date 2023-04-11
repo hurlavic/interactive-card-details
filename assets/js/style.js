@@ -8,7 +8,8 @@ let cardCVC = document.querySelector("#cvc");
 let errorName = document.querySelector("#error-name");
 let errorNum = document.querySelector("#error-num");
 let errorDate = document.querySelector("#error-date");
-let successMsg = document.querySelector(".success")
+let successMsg = document.querySelector(".success");
+let resetButton = document.querySelector("#reset")
 
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
@@ -32,6 +33,25 @@ form.addEventListener("submit", async function (e) {
         }, 3000);
     } else {
         successMsg.style.visibility = "visible";
-        form.style.visibility = "hidden"
+        form.style.visibility = "hidden";
     }
+})
+
+resetButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    form.style.visibility = "visible"
+    successMsg.style.visibility = "hidden";
+    form.reset();
+})
+
+form.addEventListener("input", (e) => {
+    e.preventDefault();
+    let cardName = document.querySelector(".name");
+    let cardNumber = document.querySelector(".number");
+    let cardDates = document.querySelector(".date");
+    let cardCVV = document.querySelector(".cvv");
+
+    cardName.textContent = nameInput.value;
+    cardNumber.textContent = numberInput.value;
+    cardCVV.textContent = cardCVC.value;
 })

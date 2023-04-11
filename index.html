@@ -17,19 +17,19 @@
     <section>
       <div>
         <div class="card-front">
+          <img src="/assets/images/photography.png" alt="logo" id="logo">
           <div class="card-details">
-            <img src="/assets/images/photography.png" alt="logo" id="logo">
-            <p class="number">1234 6789 1234 456E</p>
+            <p class="number">0000 0000 0000 0000</p>
             <div class="flex-detail">
-              <p class="name">Akindele V Toyosi</p>
-              <p class="date">08/04</p>
+              <p class="name">JOHN DOE</p>
+              <p class="date">00/00</p>
             </div>
           </div>
           <img src="/assets/images/bg-card-front.png" alt="card front" id="img1">
         </div>
         <div class="card-back">
           <div id="cvv">
-            <p>123</p>
+            <p class="cvv">123</p>
           </div>
           <img src="/assets/images/bg-card-back.png" alt="card back" id="img2">
         </div>
@@ -39,16 +39,16 @@
         <input type="text" placeholder="Enter your name" id="card-name">
         <div id="error-name" class="error"></div>
         <label for="card-number">CARD NUMBER</label>
-        <input type="text" name="card-number" id="card-number" placeholder="Enter card number">
+        <input type="text" name="card-number" id="card-number" placeholder="Enter card number" maxlength="16">
         <div id="error-num" class="error"></div>
         <div class="card-data-label">
           <label for="exp-date" id="exp-label">Exp. Date [MM/YY]</label>
           <label for="cvc">CVC</label>
         </div>
         <div class="card-data-input">
-          <input type="text" id="exp-date" placeholder="MM" class="month">
-          <input type="text" id="exp-date" placeholder="YY" class="year">
-          <input type="text" id="cvc" placeholder="CVC">
+          <input type="text" id="exp-date" placeholder="MM" class="month" maxlength="2">
+          <input type="text" id="exp-date" placeholder="YY" class="year" maxlength="2">
+          <input type="text" id="cvc" placeholder="CVC" maxlength="3">
         </div>
         <div id="error-date" class="error"></div>
         <button type="submit" id="confirm">Confirm</button>
@@ -57,13 +57,14 @@
 
     <!-- Completed state start -->
     <article class="success">
+      <img src="/assets/images/tick-removebg-preview.png" alt="success icon" id="tick">
       <h2>
         Thank you!
       </h2>
       <p>
         We've added your card details
       </p>
-      <button type="reset">
+      <button type="reset" id="reset">
         Continue
       </button>
 

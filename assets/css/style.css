@@ -24,7 +24,6 @@ form {
   display: flex;
   flex-direction: column;
   scale: 1.2;
-  visibility: hidden;
 }
 label,
 .card-data-label {
@@ -109,7 +108,9 @@ img {
 }
 #logo{
     width: 45px;
-    padding-bottom: 15%;
+    margin-left: 10%;
+    top: -8%;
+    position: absolute;
 }
 .card-back{
     position: relative;
@@ -121,21 +122,29 @@ img {
     color: white;
 }
 article{
-    /* visibility:hidden; */
+    visibility:hidden;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     right: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     scale: 1.2;
 }
+#tick{
+    width: 70px;
+}
 /* footer */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
+h2, article > p{
+    margin-bottom: 5%;
+}
+article > p{
+    color: rgb(123, 123, 123);
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
