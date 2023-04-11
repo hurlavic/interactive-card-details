@@ -17,7 +17,7 @@ section {
   justify-content: space-evenly;
   align-items: center;
   margin-left: calc(8% - 5px);
-  padding-top: 10%;
+  height: 100vh;
 }
 form {
   display: flex;
@@ -28,6 +28,7 @@ label,
 .card-data-label {
   margin: 2% 0;
   font-size: 0.7rem;
+  padding-top: 5%;
 }
 #exp-label{
     margin-right: 5%;
@@ -38,7 +39,6 @@ input {
   border-radius: 5px;
   border: 1px solid black;
   outline: none;
-  margin-bottom: 3%;
 }
 
 input[type="text"] {
@@ -61,7 +61,7 @@ button {
   outline: none;
   border-style: none;
   border-radius: 5px;
-  margin-top: 3%;
+  margin-top: 5%;
   cursor: pointer;
 }
 
