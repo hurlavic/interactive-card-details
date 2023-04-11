@@ -11,37 +11,27 @@
 
     <title>Frontend Mentor | Interactive card details form</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body>
-    <form action="submit" class="card">
-      <label for="card-name">CARD HOLDER NAME</label>
-      <input type="text" placeholder="Enter your name" id="card-name">
-      <label for="card-number">CARD NUMBER</label>
-      <input type="text" name="card-number" id="card-number" placeholder="Enter card number">
-      <div class="card-data-label">
-        <label for="exp-date">Exp. Date [MM/YY]</label>
-        <label for="cvc">CVC</label>
-      </div>
-      <div class="card-data-input">
-        <input type="text" id="exp-date" placeholder="MM">
-        <input type="text" id="exp-date" placeholder="YY">
-        <input type="text" id="cvc" placeholder="CVC">
-      </div>
-      <button type="submit">Confirm</button>
-    </form>
-
+    <section>
+      <form action="submit" class="card">
+        <label for="card-name">CARD HOLDER NAME</label>
+        <input type="text" placeholder="Enter your name" id="card-name">
+        <label for="card-number">CARD NUMBER</label>
+        <input type="text" name="card-number" id="card-number" placeholder="Enter card number">
+        <div class="card-data-label">
+          <label for="exp-date">Exp. Date [MM/YY]</label>
+          <label for="cvc">CVC</label>
+        </div>
+        <div class="card-data-input">
+          <input type="text" id="exp-date" placeholder="MM">
+          <input type="text" id="exp-date" placeholder="YY">
+          <input type="text" id="cvc" placeholder="CVC">
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+    </section>
 
     <!-- Completed state start -->
 

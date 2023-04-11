@@ -10,28 +10,34 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+section {
+  display: flex;
+  justify-content: end;
+  padding-top: 15%;
+  padding-right: 20%;
+}
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  scale: 1.2;
 }
 label,
 .card-data-label {
-  margin: 0.8% 0;
+  margin: 2% 0;
   font-size: 0.8rem;
 }
 
 input {
   width: 15rem;
-  padding: 0.5%;
+  padding: 2%;
   border-radius: 5px;
   border: 1px solid black;
   outline: none;
+  margin-bottom: 3%;
 }
 
 input[type="text"] {
-  font-size: 15px;
+  font-size: 12px;
 }
 input::placeholder {
   font-size: small;
@@ -44,11 +50,21 @@ input::placeholder {
 }
 button {
   width: 15rem;
-  padding: 0.6%;
+  padding: 1.8%;
   color: white;
   background-color: rgb(33, 9, 47);
   outline: none;
   border-style: none;
-  border-radius: 8px;
-  margin-top: 1.5%;
+  border-radius: 5px;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
