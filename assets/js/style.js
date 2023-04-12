@@ -48,30 +48,37 @@ form.addEventListener("submit", async function (e) {
     errorDate.textContent = "Enter a valid date in MM/YY format";
     monthDate.style.border = "1px solid red";
     yearDate.style.border = "1px solid red";
-    setTimeout(() => {
-      errorDate.textContent = "";
-      yearDate.style.border = "";
-      monthDate.style.border = "";
-    }, 3000);
+    errorDateTimeout();
   } else if (monthDate.value > 12 || yearDate.value <= 22) {
     monthDate.value > 12
       ? (errorDate.textContent = "Enter a valid date in MM format")
       : monthDate.value;
     yearDate.value <= 22
-      ? (errorDate.textContent = "Enter a valid date in YY format")
+      ? (errorDate.textContent = "Expiry year can't be less than 23")
       : yearDate.value;
     monthDate.value > 12 ? (monthDate.style.border = "1px solid red") : "";
     yearDate.value <= 22 ? (yearDate.style.border = "1px solid red") : "";
+    errorDateTimeout();
+  } else if (cardCVC.value.toString().length !== 3 || isNaN(cardCVC.value)) {
+    errorDate.textContent = "CVC must be 3 digits only";
+    cardCVC.style.border = "1px solid red";
     setTimeout(() => {
       errorDate.textContent = "";
-      yearDate.style.border = "";
-      monthDate.style.border = "";
+      cardCVC.style.border = "";
     }, 3000);
   } else {
     successMsg.style.visibility = "visible";
     form.style.visibility = "hidden";
   }
 });
+
+function errorDateTimeout() {
+  setTimeout(() => {
+    errorDate.textContent = "";
+    yearDate.style.border = "";
+    monthDate.style.border = "";
+  }, 3000);
+}
 
 resetButton.addEventListener("click", (e) => {
   e.preventDefault();
