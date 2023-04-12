@@ -164,7 +164,7 @@ article > p {
     background-position-x: center;
     background-size: 100vw;
   }
-  form{
+  form {
     padding-top: 5%;
   }
   .card-mock {
@@ -191,62 +191,77 @@ article > p {
   button {
     width: 400px;
   }
-  .attribution{
+  .attribution {
     padding-bottom: 3%;
   }
-.card-back{
+  .card-back {
     margin-bottom: -30%;
-}
-.card-front{
+  }
+  .card-front {
     z-index: 10;
+  }
+  article{
+    bottom: 22%;
+   left: 53%;
+    transform: translateX(-50%);
+  }
 }
+@media (max-width: 700px) {
+  .card-mock {
+    scale: 1.5;
+  }
 }
-@media(max-width:700px){
-    .card-mock{
-        scale: 1.5;
-    }
+@media (max-width: 575px) {
+  .card-mock {
+    scale: 1.3;
+  }
+  input {
+    width: 300px;
+  }
+  #exp-date {
+    width: 78px;
+  }
+  #cvc {
+    width: 8.5rem;
+    margin-left: 0;
+  }
+  button {
+    width: 300px;
+  }
+  article{
+    text-align: center;
+  }
 }
-@media(max-width:575px){
-    .card-mock{
-        scale: 1.3;
-    }
-    input{
-        width: 300px;
-    }
-    #exp-date {
-        width: 78px;
-      }
-      #cvc {
-        width: 8.5rem;
-        margin-left: 0;
-      }
-      button{
-        width: 300px;
-      }
+@media (max-width: 500px) {
+  .card-mock {
+    scale: 1.1;
+    margin-top: -10%;
+  }
+  form {
+    margin-top: -15%;
+  }
+  button{
+    margin-top: 10%;
+    align-self: center;
+  }
 }
-@media(max-width: 500px){
-    .card-mock{
-        scale: 1.1;
-        margin-top: -10%;
-    }
-    form{
-margin-top: -15%;
-    }
-}
-@media(max-width: 410px){
-    .card-mock{
-        scale: 0.9;
-    }
-    input{
-        width: 250px;
-    }
-    #exp-date {
-        width: 55px;
-      }
-      #cvc {
-        width: 8.1rem;
-      }
-      button{
-        width: 250px;
-      }
+@media (max-width: 415px) {
+  .card-mock {
+    scale: 0.9;
+  }
+  input {
+    width: 250px;
+  }
+  #exp-date {
+    width: 55px;
+  }
+  #cvc {
+    width: 8.1rem;
+  }
+  button {
+    width: 250px;
+  }
+  article{
+    bottom: 26%;
+  }
 }
