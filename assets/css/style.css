@@ -35,7 +35,7 @@ label,
     margin-right: 5%;
 }
 input {
-  width: 100%;
+  width: 300px;
   padding: 2%;
   border-radius: 5px;
   border: 1px solid black;
@@ -50,13 +50,13 @@ input::placeholder {
   font-size: small;
 }
 #exp-date {
-  width: 3rem;
+  width: 78px;
 }
 #cvc {
   width: 8.5rem;
 }
 button {
-  width: 15rem;
+  width: 300px;
   padding: 3%;
   color: white;
   background-color: rgb(33, 9, 47);
