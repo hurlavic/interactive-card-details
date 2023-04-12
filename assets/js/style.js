@@ -46,10 +46,10 @@ resetButton.addEventListener("click", (e) => {
 
 form.addEventListener("input", (e) => {
     e.preventDefault();
-    let cardName = document.querySelector(".name");
-    let cardNumber = document.querySelector(".number");
-    let cardDates = document.querySelector(".date");
-    let cardCVV = document.querySelector(".cvv");
+    const cardName = document.querySelector(".name");
+    const cardNumber = document.querySelector(".number");
+    const cardDates = document.querySelector(".date");
+    const cardCVV = document.querySelector(".cvv");
 
     cardName.textContent = nameInput.value;
     cardNumber.textContent = numberInput.value;
