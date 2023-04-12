@@ -27,7 +27,7 @@ form.addEventListener("submit", async function (e) {
     numberInput.style.border = "1px solid red";
     setTimeout(() => {
       errorNum.textContent = "";
-      nameInput.style.border = "";
+      numberInput.style.border = "";
     }, 3000);
   } else if (
     monthDate.value === "" ||
