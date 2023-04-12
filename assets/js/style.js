@@ -31,7 +31,14 @@ form.addEventListener("submit", async function (e) {
         setTimeout(() => {
             errorDate.textContent = ""
         }, 3000);
-    } else {
+    }
+    else if (monthDate.value > 31 || yearDate.value > 12) {
+        errorDate.textContent = "Enter a valid date"
+        setTimeout(() => {
+            errorDate.textContent = ""
+        }, 3000);
+    }
+    else {
         successMsg.style.visibility = "visible";
         form.style.visibility = "hidden";
     }
