@@ -11,6 +11,8 @@ let errorDate = document.querySelector("#error-date");
 let successMsg = document.querySelector(".success");
 let resetButton = document.querySelector("#reset")
 
+
+
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
     const cardNum = numberInput.value;
@@ -53,12 +55,14 @@ resetButton.addEventListener("click", (e) => {
 
 form.addEventListener("input", (e) => {
     e.preventDefault();
+    let formattedNum = numberInput.value.replace(/(.{4})/g, "$1 ");
     const cardName = document.querySelector(".name");
     const cardNumber = document.querySelector(".number");
     const cardDates = document.querySelector(".date");
     const cardCVV = document.querySelector(".cvv");
 
     cardName.textContent = nameInput.value;
-    cardNumber.textContent = numberInput.value;
+    cardNumber.textContent = formattedNum;
     cardCVV.textContent = cardCVC.value;
+    console.log(formattedNum);
 })
